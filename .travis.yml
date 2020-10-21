@@ -1,0 +1,11 @@
+language: c
+script: make
+
+deploy:
+  - provider: releases
+    api_key: 94acee2e2a2e22e3b2479e0a56f07e435441de4e
+    file_glob: true
+    file: hello
+    skip_cleanup: true
+    on:
+      tags: true
