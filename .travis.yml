@@ -3,7 +3,7 @@ script: make
 
 deploy:
   - provider: releases
-    api_key: 772587d4ab114cfbe42bd3641c7db7b6412dbe92
+    api_key: $GITHUB_TOKEN
     file_glob: true
     file: hello
     skip_cleanup: true
